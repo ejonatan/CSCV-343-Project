@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Team &: Prototype</title>
+<link rel="stylesheet" href="style.css"/>
+<script src="items.js" type="text/javascript"></script>
+</head>
+<body onload="loadDefaultMenu(); makeEquipmentScreen(); makeArmorScreen(); makeItemScreen(); makeSnailScreen();">
+<div class="main">
+	<div class="character">
+		<img src="image/Player.png">
+	</div>
+	
+	
+	
+	<div class="column">
+		<div class="tab">
+		  <button id="Weaponshr" class="tablinks">Weapons<br><div class="buttonImg" onclick="openMenu(event, 'Weapons')"><img class="small" src="image/category-equipment-off.png"></div></button>
+		  <button id="Armorhr" class="tablinks">Armor<br><div class="buttonImg" onclick="openMenu(event, 'Armor')"><img class="small" src="image/category-armor-off.png"></div></button>
+		  <button id="Itemshr" class="tablinks">Items<br><div class="buttonImg" onclick="openMenu(event, 'Items')"><img class="small" src="image/category-items-off.png"></div></button>
+		  <button id="Snailshr" class="tablinks">Snails<br><div class="buttonImg" onclick="openMenu(event, 'Snails')"><img class="small" src="image/category-snails-off.png"></div></button>
+		</div>
+		
+		<!-- Tab content -->
+		<div id="Weapons" class="tabcontent">
+		  <div class="subs">
+			<h5>Jump to:</h5>
+		  	<a href="#projectile"><button class="tablinks2"><div class="buttonImg2"><img class="small2" src="image/sub-equipment-projectile.png"></div></button></a>
+		  	<a href="#shields"><button class="tablinks2"><div class="buttonImg2"><img class="small2" src="image/sub-equipment-shields.png"></div></button></a>
+		  	<a href="#sword"><button class="tablinks2"><div class="buttonImg2"><img class="small2" src="image/sub-equipment-swords.png"></div></button></a>
+		  </div>
+		  
+		  <div class="scroll">
+		  
+			  <div class="subcategory" id="projectile">
+			  <h5>Projectiles</h5>
+			  </div>
+			  
+			  <div class="subcategory" id="shields">
+			  <h5>Shields</h5>
+			  </div>
+			  
+			  <div class="subcategory" id="sword">
+			  <h5>Swords</h5>
+			  </div>
+			  
+		  </div>
+		  
+		</div>
+		
+		<div id="Armor" class="tabcontent">
+		  <div class="subs">
+			<h5>Jump to:</h5>
+		  	<a href="#body"><button class="tablinks3"><div class="buttonImg2"><img class="small2" src="image/sub-armor-body.png"></div></button></a>
+		  	<a href="#hands"><button class="tablinks3"><div class="buttonImg2"><img class="small2" src="image/sub-armor-hands.png"></div></button></a>
+		  	<a href="#head"><button class="tablinks3"><div class="buttonImg2"><img class="small2" src="image/sub-armor-head.png"></div></button></a>
+		  	<a href="#legs"><button class="tablinks3"><div class="buttonImg2"><img class="small2" src="image/sub-armor-legs.png"></div></button></a>
+		  	<a href="#rings"><button class="tablinks3"><div class="buttonImg2"><img class="small2" src="image/sub-armor-rings.png"></div></button></a>
+		  </div> 
+		  
+		  <div class="scroll">
+		  
+			  <div class="subcategory" id="body">
+			  <h5>Body</h5>
+			  </div>
+			  
+			  <div class="subcategory" id="hands">
+			  <h5>Hands</h5>
+			  </div>
+			  
+			  <div class="subcategory" id="head">
+			  <h5>Head</h5>
+			  </div>
+			  
+			  <div class="subcategory" id="legs">
+			  <h5>Legs</h5>
+			  </div>
+					
+			  <div class="subcategory" id="rings">
+			  <h5>Rings</h5>
+			  </div>
+		  </div>
+		</div>
+		
+		<div id="Items" class="tabcontent">
+		  <div class="subs">
+			<h5>Jump to:</h5>
+		  	<a href="#consumables"><button class="tablinks4"><div class="buttonImg2"><img class="small2" src="image/sub-items-consumables.png"></div></button></a>
+		  	<a href="#keyitems"><button class="tablinks4"><div class="buttonImg2"><img class="small2" src="image/sub-items-keyitems.png"></div></button></a>
+		  </div>
+		  
+		  <div class="scroll">
+		  
+			  <div class="subcategory" id="consumables">
+			  <h5>Consumables</h5>
+			  </div>
+			  
+			  <div class="subcategory" id="keyitems">
+			  <h5>Key Items</h5>
+			  </div>
+			  
+		</div>
+		  
+		</div>
+		
+		<div id="Snails" class="tabcontent">
+			<div class="subs">
+			<h5>Jump to:</h5>
+				<a href="#aquatic"><button class="tablinks2"><div class="buttonImg2"><img class="small2" src="image/sub-snails-aquatic.png"></div></button></a>
+				<a href="#land"><button class="tablinks2"><div class="buttonImg2"><img class="small2" src="image/sub-snails-land.png"></div></button></a>
+				<a href="#tree"><button class="tablinks2"><div class="buttonImg2"><img class="small2" src="image/sub-snails-tree.png"></div></button></a>
+			</div>
+			
+			<div class="scroll">
+		  
+			  <div class="subcategory" id="aquatic">
+			  <h5>Aquatic Snails</h5>
+			  </div>
+			  
+			  <div class="subcategory" id="land">
+			  <h5>Land Snails</h5>
+			  </div>
+			  
+			  <div class="subcategory" id="tree">
+			  <h5>Tree Snails</h5>
+			  </div>
+			  
+			</div>
+		  
+		</div>
+		
+	</div>
+	
+	
+	<div class="column">
+		<h3>Character Name</h3>
+		
+		<div class="infoBox" id="stats">
+			<div class="level">LEVEL<br><h4>12</h4></div>
+			<div class="stats">
+				HP: <img src="image/bar-hp.png"> 100/100<br>
+				SP: <img src="image/bar-sp.png"> 100/100<br>
+				MP: <img src="image/bar-mp.png"> 100/100
+			</div>
+			<div class="subs">
+			  	<button class="tablinks3">ATK<br><h4>40</h4></button>
+			  	<button class="tablinks3">DEF<br><h4>63</h4></button>
+			  	<button class="tablinks3">VIT<br><h4>50</h4></button>
+			  	<button class="tablinks3">STR<br><h4>60</h4></button>
+			  	<button class="tablinks3">INT<br><h4>30</h4></button>
+		 	</div> 
+		
+		</div>
+		
+		<div class="scroll2">
+		
+			<div id="equipEquipment">
+			<h5>Equipment</h5>
+			</div>
+			
+			<div id="equipArmor">
+			<h5>Armor</h5>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class="bugs">
+		<h5>Known bugs:</h5>
+		<ul>
+			<li>Scrolling down the sub-menus causes a display issue with on-hover item descriptions.</li>
+			<li>"Jump to" buttons shift four main inventory tabs up slightly (temporary fix: remove trailing URL anchor)</li>
+			<li>Item "King's Shield" won't equip</li>
+		</ul>
+	</div>
+</body>
+</html>

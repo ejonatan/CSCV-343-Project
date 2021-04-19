@@ -1,0 +1,306 @@
+@charset "ISO-8859-1";
+
+.character{
+	width: 10%;
+	display: inline-block;
+}
+
+.character img {
+	width: 420px;
+	height: 750px;
+}
+
+.main {
+	width: 80%;
+}
+
+.column{
+	overflow: hidden;
+	margin-right: 50px;
+	height: 750px;
+	border: solid 4px #968b60;
+	outline: 10px solid rgb(0, 0, 0, .75);
+	font-family: custom;
+	width: 25%;
+	float: right;
+	background: rgb(0, 0, 0, .75);
+	margin: 20px;
+	padding: 10px;
+}
+
+button {
+	outline: none;
+	background-color: rgb(0, 0, 0, 0);
+	border: none;
+}
+
+hr {
+	border: 1px solid #968b60;
+}
+
+h5 {
+	color: #968b60;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.scroll {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 600px;
+}
+
+.scroll2 {
+	margin-top: 20px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 480px;
+}
+
+.buttonImg {
+	margin: auto;
+	margin-top: 3px;
+	width: 50%;
+	background-color: rgb(150, 150, 150, .2);
+	border-radius: 100px;
+	overflow: hidden;
+	padding: 10px;
+}
+
+.buttonImg:hover {
+	background-color: rgb(150, 150, 150, .8);
+}
+
+.buttonImg2 {
+	margin: auto;
+	background-color: rgb(150, 150, 150, .2);
+	border-radius: 100px;
+	overflow: hidden;
+	padding: 5px 0px 5px 0px;
+}
+
+.small {
+	max-width: 90%;
+	max-height: 90%;
+}
+
+.small2 {
+	max-width: 20px;
+	max-height: 20px;
+}
+
+@font-face {
+	font-family: custom;
+	src: url(font/JosefinSans-Regular.ttf);
+}
+
+body{
+	cursor: url(image/cursor.png),auto;
+	color: #f0eee9;
+	background-image: url("image/bg.png");
+	font-family: custom;
+	text-align: center;
+}
+
+.tab {
+	margin: 10px;
+	padding: 0px;
+}
+
+.subs {
+	margin: 10px;
+	padding: 0px;
+}
+
+.subs h5 {
+	margin: 0;
+	margin-bottom: 2px;
+	text-align: left;
+}
+
+.infoBox {
+	margin: auto;
+	padding: 10px;
+	width: 340px;
+	background-color: rgb(150, 150, 150, .1);
+}
+
+.level {
+	text-align: right;
+	float: left;
+	display: block;
+	font-weight: bold;
+	font-style: italic;
+	margin: 20px;
+	padding: 0;
+	font-family: custom;
+	width: 10%;
+	height: 80px;
+	color: #968b60;
+}
+
+.level h4 {
+	margin: 0;
+	margin-top: 10px;
+	color: white;
+	font-style: normal;
+	font-size: 25px;
+}
+
+.stats {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	float: right;
+	display: block;
+	width: 70%;
+	height: 80px;
+}
+
+.stats img {
+	max-width: 50%;
+}
+
+.tablinks {
+	font-family: custom;
+	width: 23%;
+	color: #d1c284;
+}
+
+.tablinks2 {
+	padding: 0;
+	font-family: custom;
+	width: 30%;
+	color: #d1c284;
+}
+
+.tablinks3 {
+	padding: 0;
+	font-family: custom;
+	width: 18%;
+	color: #d1c284;
+}
+
+.tablinks3 h4 {
+	margin: 0;
+	margin-top: 10px;
+	color: white;
+	font-style: bold;
+	font-size: 25px;
+}
+
+.tablinks4 {
+	padding: 0;
+	font-family: custom;
+	width: 49%;
+	color: #d1c284;
+}
+
+.item {
+	border: solid 2px rgb(150, 150, 150, 0);
+	margin: auto;
+	margin-bottom: 7px;
+	min-width: 360px;
+	min-height: 70px;
+	max-width: 340px;
+	max-height: 70px;
+}
+
+.item:hover {
+	border: solid 2px rgb(150, 150, 150, .8);
+}
+
+.itemimg {
+	float: left;
+	display: block;
+	background-color: rgb(0, 0, 0, .25);
+	min-width: 70px;
+	min-height: 70px;
+	max-width: 70px;
+	max-height: 70px;
+}
+
+.itemdesc {
+	text-align: left;
+	padding: 10px;
+	float: right;
+	display: block;
+	width: 270px;
+	background-color: rgb(150, 150, 150, .1);
+	min-height: 50px;
+	max-height: 50px;
+}
+
+.itemimg img {
+    max-width: 100%; /* or any custom size */
+    max-height: 100%; 
+    object-fit: contain;
+}
+
+.item:hover  + .tooltip {
+	padding: 20px;
+	position: fixed;
+	display: block;
+	min-width: 300px;
+	max-width: 300px;
+	background-color: rgb(50, 50, 50);
+	color: white;
+	border: solid #d1c284 4px;
+}
+
+.tooltip {
+	display: none;
+}
+
+.click {
+	margin-top: 4px;
+	font-size: 12px;
+	font-style: italic;
+	float: right;
+}
+
+.click img {
+	vertical-align: bottom;
+}
+
+.bugs {
+	float: right;
+	text-align: left;
+	padding: 10px;
+	color: rgb(255, 255, 255, .3);
+	margin: auto;
+	background-color: rgb(0, 0, 0, .25);
+	margin-top: 10px;
+	margin-right: 50px;
+}
+
+.bugs h5 {
+	font-size: 16px;
+	margin: 0;
+}
+
+.bugs ul {
+	margin: 2px;
+}
+
+/* SCROLLBAR STYLING BELOW ========================*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0, 0); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgb(150, 150, 150, .6);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
