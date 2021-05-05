@@ -41,7 +41,7 @@ var equipment = [
 		/*  Rarity */ rarity[1],
 		/*    Type */ equipmentType[0],
 		/*   Image */ "image/item-equipment-ashenwarriorsword.png",
-		/*    Info */ "Straight sword wielded by ashen warriors. As brittle is it appears. The jagged edge of this tired and worn blade tears into the hides of foes.",
+		/*    Info */ "Straight sword wielded by ashen warriors.<br><br>As brittle is it appears. The jagged edge of this tired and worn blade tears into the hides of foes.",
 		/*  Attack */ 138,
 		/* Defense */ 50
 	),
@@ -51,7 +51,7 @@ var equipment = [
 		/*  Rarity */ rarity[1],
 		/*    Type */ equipmentType[0],
 		/*   Image */ "image/item-equipment-shortsword.png",
-		/*    Info */ "A small straight sword. Longer than a dagger, but still lightweight. Widely used, as it requires no particular strength. A reasonable choice that will suffice in many situations, but not the thing to take along if you expect to face any serious challenge.",
+		/*    Info */ "A small straight sword.<br><br>Longer than a dagger, but still lightweight. Widely used, as it requires no particular strength.<br><br>A reasonable choice that will suffice in many situations, but not the thing to take along if you expect to face any serious challenge.",
 		/*  Attack */ 100,
 		/* Defense */ 50
 	),
@@ -61,7 +61,7 @@ var equipment = [
 		/*  Rarity */ rarity[2],
 		/*    Type */ equipmentType[1],
 		/*   Image */ "image/item-equipment-kingsshield.png",
-		/*    Info */ "One fragment of Dark, having taken human shape, became obsessed with the King's soul. Impelled by its own cravings, it sought souls, and strove to make the strength of the Giants its own.",
+		/*    Info */ "One fragment of Dark, having taken human shape, became obsessed with the King's soul.<br><br>Impelled by its own cravings, it sought souls, and strove to make the strength of the Giants its own.",
 		/*  Attack */ 28,
 		/* Defense */ 100
 	),
@@ -71,7 +71,7 @@ var equipment = [
 		/*  Rarity */ rarity[1],
 		/*    Type */ equipmentType[1],
 		/*   Image */ "image/item-equipment-chaosshield.png",
-		/*    Info */ "Once, a brilliant young sorcerer cast away his earthly desires, devoting himself entirely to the Dark that bewitched him. Nebulous, inky and serene, the Dark holds an allure matched only by the fear it strikes in men's hearts. Could it be nature, holding a mirror to mankind?",
+		/*    Info */ "Once, a brilliant young sorcerer cast away his earthly desires, devoting himself entirely to the Dark that bewitched him.<br><br>Nebulous, inky and serene, the Dark holds an allure matched only by the fear it strikes in men's hearts. Could it be nature, holding a mirror to mankind?",
 		/*  Attack */ 60,
 		/* Defense */ 75
 	),
@@ -81,7 +81,7 @@ var equipment = [
 		/*  Rarity */ rarity[0],
 		/*    Type */ equipmentType[1],
 		/*   Image */ "image/item-equipment-buckler.png",
-		/*    Info */ "A traditional small metal shield. Small shields are very light and easy to use, but have low stability when attacked. The center of a buckler is convex. designed to brush attacks aside, making parrying easier.",
+		/*    Info */ "A traditional small metal shield.<br><br>Small shields are very light and easy to use, but have low stability when attacked.<br><br>The center of a buckler is convex, designed to brush attacks aside, making parrying easier.",
 		/*  Attack */ 60,
 		/* Defense */ 75
 	),
@@ -120,7 +120,7 @@ var armor = [
 		/*  Rarity */ rarity[0],
 		/*    Type */ armorType[0],
 		/*   Image */ "image/item-armor-faraamhelmet.png",
-		/*    Info */ "Helmet worn by the Forossa Lion Knights. The mighty Lion Knights, worshippers of the war god Faraam, wore heavy armor and were feared for their nimble two-handed swordplay. But their legacy was cut short with the fall of Forossa.",
+		/*    Info */ "Helmet worn by the Forossa Lion Knights.<br><br>The mighty Lion Knights, worshippers of the war god Faraam, wore heavy armor and were feared for their nimble two-handed swordplay.<br><br>But their legacy was cut short with the fall of Forossa.",
 		/* Defense */ 47
 	),
 	// Thief Cowl
@@ -129,7 +129,7 @@ var armor = [
 		/*  Rarity */ rarity[0],
 		/*    Type */ armorType[0],
 		/*   Image */ "image/item-armor-thiefcowl.png",
-		/*    Info */ "A full face mask. Called a thief mask since most people wearing them are up to no good. Not terribly effective as armor.",
+		/*    Info */ "A full face mask.<br><br>Called a thief mask since most people wearing them are up to no good.<br><br>Not terribly effective as armor.",
 		/* Defense */ 20
 	),
 // Body
@@ -139,7 +139,7 @@ var armor = [
 		/*  Rarity */ rarity[0],
 		/*    Type */ armorType[1],
 		/*   Image */ "image/item-armor-faraamarmor.png",
-		/*    Info */ "Armor worn by the Forossa Lion Knights. The mighty Lion Knights, worshippers of the war god Faraam, wore heavy armor and were feared for their nimble two-handed swordplay. But their legacy was cut short with the fall of Forossa.",
+		/*    Info */ "Armor worn by the Forossa Lion Knights.<br><br>The mighty Lion Knights, worshippers of the war god Faraam, wore heavy armor and were feared for their nimble two-handed swordplay.<br><br>But their legacy was cut short with the fall of Forossa.",
 		/* Defense */ 124
 	),
 	// Thief Armor
@@ -148,7 +148,7 @@ var armor = [
 		/*  Rarity */ rarity[0],
 		/*    Type */ armorType[1],
 		/*   Image */ "image/item-armor-thiefarmor.png",
-		/*    Info */ "Armor dyed Black. Allows the wearer to blend in with the dark. Often used by those with ill-intent. Meticulously crafted, and provides fair defense.",
+		/*    Info */ "Armor dyed Black.<br><br>Allows the wearer to blend in with the dark.<br><br>Often used by those with ill-intent. Meticulously crafted, and provides fair defense.",
 		/* Defense */ 65
 	),
 // Hands
@@ -158,7 +158,7 @@ var armor = [
 		/*  Rarity */ rarity[0],
 		/*    Type */ armorType[2],
 		/*   Image */ "image/item-armor-faraamgauntlets.png",
-		/*    Info */ "Gauntlets worn by the Forossa Lion Knights. The mighty Lion Knights, worshippers of the war god Faraam, wore heavy armor and were feared for their nimble two-handed swordplay. But their legacy was cut short with the fall of Forossa.",
+		/*    Info */ "Gauntlets worn by the Forossa Lion Knights.<br><br>The mighty Lion Knights, worshippers of the war god Faraam, wore heavy armor and were feared for their nimble two-handed swordplay.<br><br>But their legacy was cut short with the fall of Forossa.",
 		/* Defense */ 46
 	),
 	// Thief Gloves
@@ -167,7 +167,7 @@ var armor = [
 		/*  Rarity */ rarity[0],
 		/*    Type */ armorType[2],
 		/*   Image */ "image/item-armor-thiefgloves.png",
-		/*    Info */ "Leather gloves dyed Black. Allows the wearer to blend in with the dark. Often used by those with ill-intent. Meticulously crafted, and provides fair defense.",
+		/*    Info */ "Leather gloves dyed Black.<br><br>Allows the wearer to blend in with the dark.<br><br>Often used by those with ill-intent. Meticulously crafted, and provides fair defense.",
 		/* Defense */ 30
 	),
 // Legs
@@ -177,7 +177,7 @@ var armor = [
 		/*  Rarity */ rarity[0],
 		/*    Type */ armorType[3],
 		/*   Image */ "image/item-armor-faraamboots.png",
-		/*    Info */ "Boots worn by the Forossa Lion Knights. The mighty Lion Knights, worshippers of the war god Faraam, wore heavy armor and were feared for their nimble two-handed swordplay. But their legacy was cut short with the fall of Forossa.",
+		/*    Info */ "Boots worn by the Forossa Lion Knights.<br><br>The mighty Lion Knights, worshippers of the war god Faraam, wore heavy armor and were feared for their nimble two-handed swordplay.<br><br>But their legacy was cut short with the fall of Forossa.",
 		/* Defense */ 78
 	),
 	// Thief Boots
@@ -186,7 +186,7 @@ var armor = [
 		/*  Rarity */ rarity[0],
 		/*    Type */ armorType[3],
 		/*   Image */ "image/item-armor-thiefboots.png",
-		/*    Info */ "Leather boots dyed Black. Allows the wearer to blend in with the dark. Often used by those with ill-intent. Meticulously crafted, and provides fair defense.",
+		/*    Info */ "Leather boots dyed Black.<br><br>Allows the wearer to blend in with the dark.<br><br>Often used by those with ill-intent. Meticulously crafted, and provides fair defense.",
 		/* Defense */ 37
 	),
 // Ring
@@ -231,7 +231,7 @@ var items = [
 		/*  Rarity */ rarity[3],
 		/*    Type */ itemType[0],
 		/*   Image */ "image/item-estusflask.png",
-		/*    Info */ "A green glass bottle of unknown make. Fill it with Estus at a bonfire, and drink from it to restore HP. All that is known now is that this flask remains a prized possession of the Undead."
+		/*    Info */ "A green glass bottle of unknown make.<br><br>Fill it with Estus at a bonfire, and drink from it to restore HP.<br><br>All that is known now is that this flask remains a prized possession of the Undead."
 	),
 	// Divine Blessing
 	new Item(
@@ -239,7 +239,7 @@ var items = [
 		/*  Rarity */ rarity[2],
 		/*    Type */ itemType[0],
 		/*   Image */ "image/item-divineblessing.png",
-		/*    Info */ "Holy water endowed with a divine blessing. Cures status effects and fully restores HP. Water blessed by an ancient goddess. Her name is long forgotten, and the Magic Academy of Melfia denies even her existence."
+		/*    Info */ "Holy water endowed with a divine blessing.<br><br>Cures status effects and fully restores HP.<br><br>Water blessed by an ancient goddess. Her name is long forgotten, and the Magic Academy of Melfia denies even her existence."
 	),
 // Keys
 	// Heavy Iron Key
@@ -248,7 +248,7 @@ var items = [
 		/*  Rarity */ rarity[1],
 		/*    Type */ itemType[1],
 		/*   Image */ "image/item-heavyironkey.png",
-		/*    Info */ "A piece of iron shaped like a key. Past the altar deep within the Iron Keep and through a door is the tower that the Old Iron King used to produce iron. The unearthly weight of this chunk of iron is a reminder of the Iron King's own immeasurable strength."
+		/*    Info */ "A piece of iron shaped like a key.<br><br>Past the altar deep within the Iron Keep and through a door is the tower that the Old Iron King used to produce iron.<br><br>The unearthly weight of this chunk of iron is a reminder of the Iron King's own immeasurable strength."
 	),
 	// House Key
 	new Item(
@@ -256,7 +256,7 @@ var items = [
 		/*  Rarity */ rarity[0],
 		/*    Type */ itemType[1],
 		/*   Image */ "image/item-housekey.png",
-		/*    Info */ "Key to the abandoned house in Majula. Received from Cale the Cartographer. In the past, Majula served as a dumping ground for horrible things, but is now a gathering place for those with no better place to go. It seems this house in Majula was the final home for a few such souls."
+		/*    Info */ "Key to the abandoned house in Majula.<br><br>Received from Cale the Cartographer.<br><br>In the past, Majula served as a dumping ground for horrible things, but is now a gathering place for those with no better place to go. It seems this house in Majula was the final home for a few such souls."
 	)
 ];
 
@@ -281,7 +281,7 @@ var snails = [
 		/*  Rarity */ rarity[0],
 		/*    Type */ snailType[0],
 		/*   Image */ "image/item-snail-gardensnail.png",
-		/*    Info */ "Cornu aspersum, known by the common name garden snail, is a species of land snail in the family Helicidae, which includes some of the most familiar land snails. The snail is relished as a food item in some areas, but it is also widely regarded as a pest in gardens and in agriculture, especially in regions where it has been introduced accidentally, and where snails are not usually considered to be a menu item."
+		/*    Info */ "Cornu aspersum, known by the common name garden snail, is a species of land snail in the family Helicidae, which includes some of the most familiar land snails.<br><br>The snail is relished as a food item in some areas, but it is also widely regarded as a pest in gardens and in agriculture, especially in regions where it has been introduced accidentally, and where snails are not usually considered to be a menu item."
 	),
 	// Milk Snail
 	new Item(
@@ -298,7 +298,7 @@ var snails = [
 		/*  Rarity */ rarity[1],
 		/*    Type */ snailType[1],
 		/*   Image */ "image/item-snail-mysterysnail.png",
-		/*    Info */ "Mystery snails possess structurally complex eyes at the tip of a cephalic eyestalk. These snails possess the ability to regenerate the eye completely after amputation through the mid-eyestalk. They are born with both gills and lungs."
+		/*    Info */ "Mystery snails possess structurally complex eyes at the tip of a cephalic eyestalk.<br><br>These snails possess the ability to regenerate the eye completely after amputation through the mid-eyestalk. They are born with both gills and lungs."
 	),
 	// Trapdoor Snail
 	new Item(
@@ -315,7 +315,7 @@ var snails = [
 		/*  Rarity */ rarity[3],
 		/*    Type */ snailType[2],
 		/*   Image */ "image/item-snail-liguus.png",
-		/*    Info */ "Liguus is a genus of large tropical air-breathing land snails, more specifically arboreal or tree snails, terrestrial pulmonate gastropod mollusks in the family Orthalicidae. These snails are especially notable for their relatively large size, and for their often brightly colored shells, which sometimes have complex color patterning."
+		/*    Info */ "Liguus is a genus of large tropical air-breathing land snails, more specifically arboreal or tree snails, terrestrial pulmonate gastropod mollusks in the family Orthalicidae.<br><br>These snails are especially notable for their relatively large size, and for their often brightly colored shells, which sometimes have complex color patterning."
 	),
 	// Bulimulus
 	new Item(
@@ -405,7 +405,8 @@ function makeEquippedScreen() {
 			infoDiv.classList.add("tooltip");
 			
 			var curItem = equipment[i];
-			itemDiv.innerHTML = '<div onclick="setEquipped(\'' + curItem.name + '\', false);"><div class="itemimg"><img src="' + curItem.imageDir + '"></div><div class="itemdesc">' + curItem.name + "<br>ATK: " + curItem.attack + " DEF: " + curItem.defense + "</div></div>"; 
+			itemDiv.innerHTML = '<div onclick="setEquipped(\'' + curItem.name + '\', false);"><div class="itemimg"><img src="' + curItem.imageDir + '"></div><div class="itemdesc">'
+								+ curItem.name + "<br><br><span class='stat-name'>ATK: </span>" + curItem.attack + "<span class='stat-name'> DEF: </span>" + curItem.defense + "</div></div>"; 
 			infoDiv.innerHTML = curItem.info + '<br><div class="click">Unequip&nbsp;<img src="image/icon-lmb.png"></div>';
 			
 			atk += equipment[i].attack;
@@ -466,8 +467,11 @@ function makeEquipmentScreen(){
 			infoDiv.classList.add("tooltip");
 			
 			var curItem = equipment[i];
-			itemDiv.innerHTML = '<div onclick="setEquipped(\'' + curItem.name + '\', true);"><div class="itemimg"><img src="' + curItem.imageDir + '"></div><div class="itemdesc">' + curItem.name + "<br>ATK: " + curItem.attack + " DEF: " + curItem.defense + "</div></div>"; 
-			infoDiv.innerHTML = curItem.info + '<br><div class="click">Equip&nbsp;<img src="image/icon-lmb.png"></div>';
+			itemDiv.innerHTML = '<div onclick="setEquipped(\'' + curItem.name + '\', true);"><div class="itemimg"><img src="' + curItem.imageDir + '"></div><div class="itemdesc">'
+								+ curItem.name + "<br><br><span class='stat-name'>ATK: </span>" + curItem.attack + "<span class='stat-name'> DEF: </span>" + curItem.defense + "</div></div>"; 
+			infoDiv.innerHTML = '<div class="tooltip-area">' + '<img class="tooltip-image" src="' + curItem.imageDir + '">' + '<span class="tooltip-title">' + curItem.name + '</span>' + '<br><span class="rarity ' + curItem.rarity + '">' + curItem.rarity + '</span></div>'
+								+ curItem.info
+								+ '<div class="tooltip-area">' + '<span class="stat-name">ATK: </span>' + curItem.attack + '<div class="click">Equip&nbsp;<img src="image/icon-lmb.png"></div></div>';
 			switch(curItem.type){
 				case "Sword":
 					swordDiv.appendChild(itemDiv);
@@ -515,8 +519,11 @@ function makeArmorScreen(){
 			infoDiv.classList.add("tooltip");
 			
 			var curItem = armor[i];
-			itemDiv.innerHTML = '<div onclick="setEquipped(\'' + curItem.name + '\', true);"><div class="itemimg"><img src="' + curItem.imageDir + '"></div><div class="itemdesc">' + curItem.name + "<br>DEF: " + curItem.defense + "</div>"; 
-			infoDiv.innerHTML = curItem.info + '<br><div class="click">Equip&nbsp;<img src="image/icon-lmb.png"></div>';
+			itemDiv.innerHTML = '<div onclick="setEquipped(\'' + curItem.name + '\', true);"><div class="itemimg"><img src="' + curItem.imageDir + '"></div><div class="itemdesc">' + curItem.name + "<br><br><span class='stat-name'>DEF: </span>" + curItem.defense + "</div>"; 
+			infoDiv.innerHTML = '<div class="tooltip-area">' + '<img class="tooltip-image" src="' + curItem.imageDir + '">' + '<span class="tooltip-title">' + curItem.name + '</span>' + '<br><span class="rarity ' + curItem.rarity + '">' + curItem.rarity + '</span></div>'
+							  + curItem.info
+							  + '<div class="tooltip-area">' + '<span class="stat-name">DEF: </span>' + curItem.defense + '<div class="click">Equip&nbsp;<img src="image/icon-lmb.png"></div></div>';
+
 			switch(curItem.type){
 				case "Head":
 					headDiv.appendChild(itemDiv);
@@ -562,7 +569,9 @@ function makeItemScreen(){
 		
 		var curItem = items[i];
 		itemDiv.innerHTML = '<div class="itemimg"><img src="' + curItem.imageDir + '"></div><div class="itemdesc">' + curItem.name + "</div>"; 
-		infoDiv.innerHTML = curItem.info;
+		infoDiv.innerHTML = '<div class="tooltip-area">' + '<img class="tooltip-image" src="' + curItem.imageDir + '">' + '<span class="tooltip-title">' + curItem.name + '</span>' + '<br><span class="rarity ' + curItem.rarity + '">' + curItem.rarity + '</span></div>'
+							+ curItem.info
+							+ '<div class="tooltip-area">' + '<div class="click">Use&nbsp;<img src="image/icon-lmb.png"></div></div>';
 		switch(curItem.type){
 			case "Consumables":
 				consDiv.appendChild(itemDiv);
@@ -598,7 +607,8 @@ function makeSnailScreen(){
 		
 		var curItem = snails[i];
 		itemDiv.innerHTML = '<div class="itemimg"><img src="' + curItem.imageDir + '"></div><div class="itemdesc">' + curItem.name + "</div>"; 
-		infoDiv.innerHTML = curItem.info;
+		infoDiv.innerHTML = '<div class="tooltip-area">' + '<img class="tooltip-image" src="' + curItem.imageDir + '">' + '<span class="tooltip-title">' + curItem.name + '</span>' + '<br><span class="rarity ' + curItem.rarity + '">' + curItem.rarity + '</span></div>'
+							+ curItem.info;
 		switch(curItem.type){
 			case "Land":
 				landDiv.appendChild(itemDiv);

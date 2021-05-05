@@ -162,6 +162,12 @@ body{
 	max-width: 50%;
 }
 
+.stat-name {
+	font-style: italic;
+	color: #b8ac7c;
+	font-size: 10pt;
+}
+
 .tablinks {
 	font-family: custom;
 	width: 23%;
@@ -238,20 +244,64 @@ body{
     object-fit: contain;
 }
 
-.item:hover  + .tooltip {
-	font-size: 12px;
-	padding: 20px;
-	position: fixed;
+.item:hover + .tooltip {
 	display: block;
+}
+
+.tooltip {
+	text-align: left;
+	display: none;
+	font-size: 14pt;
+	font-size: 14pt;
+	padding: 20px;
+	position: absolute;
 	min-width: 300px;
 	max-width: 300px;
+	z-index: 1000;
 	background-color: rgb(50, 50, 50);
 	color: white;
 	border: solid #d1c284 4px;
 }
 
-.tooltip {
-	display: none;
+.tooltip-area {
+	margin-top: 12px;
+	margin-bottom: 12px;
+	padding-left: 12px;
+	padding-right: 12px;
+	overflow: auto;
+}
+
+.tooltip-title {
+	font-size: 16pt;
+	font-weight: bold;
+	display: inline-block;
+	margin-bottom: 8px;
+}
+
+.tooltip-image {
+	float: right;
+}
+
+.tooltip-stats {
+	text-align: center;
+}
+
+
+/* Rarity colors */
+.rarity {
+	font-style: italic;
+}
+.Common {
+	color: #c5c5c5;
+}
+.Uncommon {
+	color: #3685Fb;
+}
+.Rare {
+	color: #ae5dff;
+}
+.Legendary {
+	color: #ffda47;
 }
 
 .click {
