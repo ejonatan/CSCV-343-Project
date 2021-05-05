@@ -436,8 +436,7 @@ function makeEquippedScreen() {
 			itemDiv.innerHTML = '<div onclick="setEquipped(\'' + curItem.name + '\', false);"><div class="itemimg"><img src="' + curItem.imageDir + '"></div><div class="itemdesc">' + curItem.name + "<brDEF: " + curItem.defense + "</div></div>"; 
 			infoDiv.innerHTML = curItem.info + '<br><div class="click">Unequip&nbsp;<img src="image/icon-lmb.png"></div>';
 			
-			atk += equipment[i].attack;
-			def += equipment[i].defense;
+			def += armor[i].defense;
 			
 			armorDiv.appendChild(itemDiv);
 			armorDiv.appendChild(infoDiv);
