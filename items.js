@@ -57,7 +57,7 @@ var equipment = [
 	),
 	// King's Shield
 	new Equipment(
-		/*    Name */ "King's Shield",
+		/*    Name */ "King`s Shield",
 		/*  Rarity */ rarity[2],
 		/*    Type */ equipmentType[1],
 		/*   Image */ "image/item-equipment-kingsshield.png",
@@ -344,12 +344,16 @@ function resetAll() {
 
 function setEquipped(itemName, equipped) {
 	var item;
+
+	// search for item in armor
 	for(var i = 0; i < armor.length; i++) {
 		if (itemName === armor[i].name) {
 			item = armor[i];
 			break;
 		}
 	}
+
+	// search for item in equipment
 	for(var i = 0; i < equipment.length; i++) {
 		if (itemName === equipment[i].name) {
 			item = equipment[i];
@@ -357,11 +361,14 @@ function setEquipped(itemName, equipped) {
 		}
 	}
 	
+	// set item status
 	if (equipped) {
 		item.equipped = true;
 	} else {
 		item.equipped = false;
 	}
+
+	// reset
 	resetAll();
 }
 
@@ -371,10 +378,22 @@ function makeEquippedScreen() {
 	removeAllChildren(equipmentDiv);
 	removeAllChildren(armorDiv);
 	equipmentDiv.innerHTML = "<h5>Equipment</h5>";
+	equipmentDiv.innerHTML += "<div class=\"blankEquip item\"><div class=\"itemimg\"><img></div><div class=\"itemdesc\"></div></div>";
+	var noEquipment = true;
 	armorDiv.innerHTML = "<h5>Armor</h5>";
+	armorDiv.innerHTML += "<div class=\"blankEquip item\"><div class=\"itemimg\"><img></div><div class=\"itemdesc\"></div></div>";
+	var noArmor = true;
 	
 	for(var i = 0; i < equipment.length; i++){
 		if (equipment[i].equipped) {
+
+			// we are equipping something, so get rid of no equipment placeholder
+			if (noEquipment) {
+				removeAllChildren(equipmentDiv);
+				equipmentDiv.innerHTML = "<h5>Equipment</h5>";
+				noEquipment = false;
+			}
+
 			var itemDiv = document.createElement("div");
 			itemDiv.classList.add("item");
 			
@@ -392,6 +411,14 @@ function makeEquippedScreen() {
 	
 	for(var i = 0; i < armor.length; i++){
 		if (armor[i].equipped) {
+
+			// we are equipping something, so get rid of no equipment placeholder
+			if (noArmor) {
+				removeAllChildren(armorDiv);
+				armorDiv.innerHTML = "<h5>Armor</h5>";
+				noArmor = false;
+			}
+			
 			var itemDiv = document.createElement("div");
 			itemDiv.classList.add("item");
 			
@@ -547,6 +574,9 @@ function makeSnailScreen(){
 	removeAllChildren(aquaDiv);
 	removeAllChildren(landDiv);
 	removeAllChildren(treeDiv);
+	aquaDiv.innerHTML = "<h5>Aquatic Snails</h5>";
+	landDiv.innerHTML = "<h5>Land Snails</h5>";
+	treeDiv.innerHTML = "<h5>Tree Snails</h5>";
 	
 	for(var i = 0; i < snails.length; i++){
 		var itemDiv = document.createElement("div");
