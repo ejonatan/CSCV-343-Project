@@ -433,7 +433,7 @@ function makeEquippedScreen() {
 			infoDiv.classList.add("tooltip");
 			
 			var curItem = armor[i];
-			itemDiv.innerHTML = '<div onclick="setEquipped(\'' + curItem.name + '\', false);"><div class="itemimg"><img src="' + curItem.imageDir + '"></div><div class="itemdesc">' + curItem.name + "<brDEF: " + curItem.defense + "</div></div>"; 
+			itemDiv.innerHTML = '<div onclick="setEquipped(\'' + curItem.name + '\', false);"><div class="itemimg"><img src="' + curItem.imageDir + '"></div><div class="itemdesc">' + curItem.name + "<br>DEF: " + curItem.defense + "</div></div>"; 
 			infoDiv.innerHTML = curItem.info + '<br><div class="click">Unequip&nbsp;<img src="image/icon-lmb.png"></div>';
 			
 			def += armor[i].defense;
