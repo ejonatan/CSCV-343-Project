@@ -373,6 +373,10 @@ function setEquipped(itemName, equipped) {
 }
 
 function makeEquippedScreen() {
+	var atkHeader = document.getElementById("pATK");
+	var atk = 0;
+	var def = 0;
+	var defHeader = document.getElementById("pDEF");
 	var equipmentDiv = document.getElementById("equipEquipment");
 	var armorDiv = document.getElementById("equipArmor");
 	removeAllChildren(equipmentDiv);
@@ -404,6 +408,9 @@ function makeEquippedScreen() {
 			itemDiv.innerHTML = '<div onclick="setEquipped(\'' + curItem.name + '\', false);"><div class="itemimg"><img src="' + curItem.imageDir + '"></div><div class="itemdesc">' + curItem.name + "<br>ATK: " + curItem.attack + " DEF: " + curItem.defense + "</div></div>"; 
 			infoDiv.innerHTML = curItem.info + '<br><div class="click">Unequip&nbsp;<img src="image/icon-lmb.png"></div>';
 			
+			atk += equipment[i].attack;
+			def += equipment[i].defense;
+			
 			equipmentDiv.appendChild(itemDiv);
 			equipmentDiv.appendChild(infoDiv);
 		}
@@ -429,10 +436,15 @@ function makeEquippedScreen() {
 			itemDiv.innerHTML = '<div onclick="setEquipped(\'' + curItem.name + '\', false);"><div class="itemimg"><img src="' + curItem.imageDir + '"></div><div class="itemdesc">' + curItem.name + "<brDEF: " + curItem.defense + "</div></div>"; 
 			infoDiv.innerHTML = curItem.info + '<br><div class="click">Unequip&nbsp;<img src="image/icon-lmb.png"></div>';
 			
+			atk += equipment[i].attack;
+			def += equipment[i].defense;
+			
 			armorDiv.appendChild(itemDiv);
 			armorDiv.appendChild(infoDiv);
 		}
 	}
+	atkHeader.innerHTML =  atk;
+	defHeader.innerHTML =  def;
 }
 
 function makeEquipmentScreen(){
