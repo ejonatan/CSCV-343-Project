@@ -103,6 +103,7 @@ body{
 }
 
 .tab {
+	height: 80px;
 	margin: 10px;
 	padding: 0px;
 }
@@ -238,6 +239,7 @@ body{
 }
 
 .item:hover  + .tooltip {
+	font-size: 12px;
 	padding: 20px;
 	position: fixed;
 	display: block;
@@ -281,6 +283,10 @@ body{
 
 .bugs ul {
 	margin: 2px;
+}
+
+.blankEquip {
+	z-index: -100;
 }
 
 /* SCROLLBAR STYLING BELOW ========================*/
